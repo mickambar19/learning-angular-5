@@ -11,4 +11,9 @@
     </div>
 
   </div>
+  <div class="col-xs-12">
+    <button class="btn btn-primary" (click)="updateToggleState()">Display Details</button>
+    <p *ngIf="toggleState">Secret Password = tuna</p>
+    <p *ngFor="let date of log; let i = index" [ngStyle]="{backgroundColor: getBG(i)}" [ngClass]="{whiteText: isFifthOrGreater(i)}">{{date}}</p>
+  </div>
 </div>
