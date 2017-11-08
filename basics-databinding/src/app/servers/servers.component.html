@@ -16,3 +16,7 @@
 <p>{{ serverCreationStatus }}</p>
 <app-server></app-server>
 <app-server></app-server>
+
+<input type="text" class="form-control" [(ngModel)]="username">
+<p>{{username}}</p>
+<button class="btn btn-default" (click)="clearText()" [disabled]="!username.length > 0">Clear Text</button>
