@@ -18,6 +18,7 @@
 <!--<p class="bg-danger">{{ serverName }}</p>-->
 <p>{{allowNewServer}}</p>
 <p [innerText]="allowNewServer"></p>
-<p>Server Creation Status: {{serverCreationStatus}}</p>
+<!--<p>Server Creation Status: {{serverCreationStatus}}</p>-->
+<p *ngIf="serverCreated">Server Creation Status: {{serverCreationStatus}}</p>
 <app-server></app-server>
 <app-server></app-server>
