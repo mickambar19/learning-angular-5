@@ -3,6 +3,8 @@
   [disabled]="!allowNewServer"
   (click)="onCreateNewServer()"
   >Add Server</button>
+<input type="text" class="form-control" (input)="updateServerName($event)">
+<p class="bg-danger">{{ serverName }}</p>
 <p>{{allowNewServer}}</p>
 <p [innerText]="allowNewServer"></p>
 <p>Server Creation Status: {{serverCreationStatus}}</p>
