@@ -1,0 +1,249 @@
+*{
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+}
+
+.header-content{
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.wrapper{
+  display: -webkit-flex;
+  display: flex;
+}
+.wrapper .same-height{
+  flex: 1;
+}
+
+.brand-logo {
+  height: 70px;
+  width: 170px;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+
+.center-with-flex{
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+
+.data-dropdown-wrapper{
+  flex: 1;
+  text-align: left;
+}
+
+.caret-wrapper{
+  width: 45px;
+}
+
+.dropdown-button-selector{
+  width: 100%;
+  padding-right: 0;
+  padding-left: 5px;
+  border: 1px solid #E4E4E4;
+  background-color: white;
+}
+
+.dropdown-wrapper{
+  height: 100%;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+.dropdown-wrapper .dropdown{
+  flex:1;
+}
+.divider {
+  background-color: lightgray; height: 1px;
+}
+
+.selected-type{
+  color: #01B9A4;
+}
+.dropdown-type{
+  color: #9C9C9C;
+}
+
+.notifications-wrapper{
+  height: 100%;
+}
+
+input[type=text].searchbar{
+  background-color: white;
+  flex: 1;
+  padding: 8px 0px 5px 14px;
+  border: 0;
+  outline: 0 none;
+}
+
+.app-header .navbar-toggle{
+  border: solid 1px lightgrey;
+}
+.app-header .navbar-toggle .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+  background-color: lightgrey;
+}
+
+.app-header .navbar-nav {
+  float: none;
+  margin: 0;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-header .nav>li>a:focus, .nav>li>a:hover {
+  text-decoration: none;
+  background-color: white;
+}
+
+.app-header .navbar-nav>li>a{
+  padding: 0 5px!important;
+}
+.app-header .navbar-nav>li{
+  margin:0 5px!important;
+}
+
+.app-header li.active a span{
+  border-radius: 6px;
+  background-color: #F2F2F2;
+  color: black!important;
+  padding: 3px 20px;
+}
+.app-header li a span{
+  color: #9C9C9C;
+}
+.app-header li a span.caret{
+  color: #000;
+}
+.app-header .navbar-btn{
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+
+
+.main-menu-option{
+  color: #9C9C9C;
+}
+
+button.main-menu-option{
+  border: 1px solid #E4E4E4;
+}
+div.col-md-2.col-md-offset-1.visible-md.visible-lg {
+  display: flex !important;
+  align-items: center;
+}
+
+.centered-menu .dropdown > a > .caret{
+  margin-left: 10px;
+}
+/* === MEDIA QUERIES === */
+@media screen and (min-width: 1350px) {
+  .app-header .col-md-offset-1{
+    margin-left: 8.33333%;
+  }
+  .app-header .col-md-3{
+    width: 30%;
+  }
+  .app-header .col-md-6{
+    width: 50%;
+  }
+}
+@media screen and (max-width: 1349px) {
+  .app-header .col-md-offset-1{
+    margin-left: 2px;
+  }
+  .app-header .col-md-3{
+    padding-left: 0px;
+    width: 30%;
+  }
+  .app-header .col-md-6.centered-menu{
+    width: 59%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .app-header .col-md-6.centered-menu > div#main-menu{
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  input[type=text].searchbar{
+    padding-left: 0px;
+  }
+}
+
+@media screen and (max-width: 1144px) {
+  .caret-wrapper{
+    width: inherit;
+    padding: 5px;
+  }
+
+  .centered-menu .dropdown > a > .caret{
+    margin-left: 3px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .wrapper{
+    display: block;
+  }
+
+  .brand-logo{
+    width: 100%;
+  }
+  .notifications-wrapper {
+    height: 54px;
+  }
+  .app-header .navbar-toggle{
+    display: block;
+  }
+  .app-header .col-md-3{
+    width: 100%;
+  }
+
+  .app-header > div:nth-child(1) > div.col-md-4.col-md-offset-2.same-height.row-eq-height > div{
+    margin-bottom: 4px;
+  }
+  div.col-md-2.col-md-offset-1.visible-md.visible-lg{
+    display: none!important;
+  }
+
+}
+
+@media screen and (max-width: 782px) {
+
+}
+
+@media screen and (max-width: 768px) {
+  .brand-logo{
+    width: 100%;
+  }
+
+
+  .wrapper .same-height{
+    flex: inherit;
+  }
+
+
+}
+
+@media screen and (max-width: 600px) {
+
+}
+
+@media screen and (max-width: 568px) {
+
+}

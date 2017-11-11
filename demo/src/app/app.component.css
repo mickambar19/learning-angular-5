@@ -1,0 +1,12 @@
+app-dashboard{
+  flex: 1;
+  min-height: 100%;
+  display: flex;
+}
+
+@media screen and (max-width: 991px){
+  
+}
+@media screen and (max-width: 782px) {
+
+}

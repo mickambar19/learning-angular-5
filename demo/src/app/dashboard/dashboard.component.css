@@ -1,0 +1,310 @@
+.dashboard-wrapper{
+  padding: 30px 8%;
+  min-height: 100%;
+  background-color: #F2F2F2;
+  flex: 1;
+}
+
+.centered-dash{
+  display: flex;
+  flex-direction: column;
+}
+
+.centered-dash > .row.wrapper-main-info{
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+}
+
+.main.card {
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.main.card > .top{
+  height:30px;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  margin-top: 5px;
+  margin-bottom: 3px;
+}
+
+.main.card > .bottom{
+  flex: 1;
+  padding-left: 15px;
+  width: 95%;
+}
+
+.main.card  .hint{
+  font-size: 15px;
+  padding-left: 10px;
+}
+
+
+
+.card, .main.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 2px;
+}
+
+.main.card{
+  padding: 15px 10px;
+  color: white;
+}
+.main.card{
+  background-color: #006B68;
+  border-radius: 2px;
+}
+
+.main.card h3{
+  margin:0;
+  padding:0;
+}
+
+.wrapper.card{
+  margin-right: -15px;
+  margin-left: 10px;
+  background-color: white;
+  min-height: 100%;
+  border-radius: 2px;
+  padding: 0;
+}
+
+.wrapper.card .row{
+  margin:0;
+  padding:0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.wrapper.card .row > div:nth-child(1), .wrapper.card .row > div:nth-child(2){
+  border-right:solid 2px #c8c8c8;
+}
+.row.wrapper-main-info > [class*='col-']{
+  display: flex;
+  flex-direction: column;
+}
+
+.percentage-card{
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+}
+
+.percentage-card > div{
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+}
+
+.percentage{
+  z-index: 100;
+  text-align: center;
+  width: 100%;
+  font-size: 15px;
+  font-weight: bold;
+  color: #00B8A4;
+}
+.percentage-card img{
+
+  position: absolute;
+  left: 0;
+}
+.counter-wrapper{
+  flex: 1;
+  padding-left: 10px;
+}
+
+.percentage-card .counter{
+  font-size: 40px;
+  margin: 0;
+  padding: 0;
+  margin-top: -5px;
+}
+.percentage-card .counter-title{
+  color: #a2a2a2;
+}
+
+.percentage-card h4{
+  font-size: 12px;
+  margin: 0;
+  margin-top: 10px;
+}
+.percentage-image-wrapper{
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  position: relative;
+  width: 60px;
+  height: 60px;
+}
+
+.row.wrapper-main-info > .col-md-12 > div{
+  margin-right: -10px;
+  margin-left: 0px;
+
+}
+
+.col-md-7 .card {
+  background-color: white;
+  margin: 0;margin-right: 15px;
+}
+
+.dashboard-wrapper .col-md-12{
+  clear: both;
+  margin-top: 10px;
+  padding: 0;
+  min-width: 100%;
+}
+
+.card.statistics{
+  padding-top: 20px;
+  display: flex;
+  flex:1;
+  align-items: center;
+  /*justify-content: center;*/
+  max-width: 100%;
+  overflow: scroll;
+}
+.container-same-height.chart-component-wrapper{
+  flex-wrap: nowrap;
+}
+
+.chart-component-wrapper > .col-md-7{
+  padding: 0px;
+  margin: 0px;
+}
+.history-component{
+  padding: 0px;
+  margin: 0px;
+  height: 420px;
+
+}
+
+.history-component > .card{
+  display: flex;
+}
+
+.container-same-height{
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+}
+
+app-statistics-history{
+  display: flex;
+  flex: 1;
+}
+
+.container-same-height > [class*='col-']{
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* === MEDIA QUERIES === */
+@media screen and (min-width: 1231px) {
+
+}
+@media screen and (max-width: 1230px) {
+
+}
+
+@media screen and (max-width: 1144px) {
+
+  .main.card{
+    min-width: 100%;
+
+  }
+
+  .wrapper.card{
+    margin:0;
+    min-width: 100%;
+  }
+
+  .row.wrapper-main-info{
+    align-items: center;
+    justify-content: center;
+  }
+
+  .percentage-card{
+    height: 100px;
+  }
+
+  .row.wrapper-main-info > .col-md-12 > div{
+    margin-right: 0px;
+    margin-left: 0px;
+
+  }
+
+  .chart-component-wrapper > .col-md-7{
+    width: 100%;
+  }
+
+  .history-component{
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .container-same-height.chart-component-wrapper{
+    flex-wrap: wrap;
+  }
+
+  .card.statistics{
+    width: 100%;
+    justify-content: center;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .col-md-7 .card{
+    margin: 0;
+  }
+  .wrapper.card .row{
+    display: block;
+  }
+  .wrapper.card .row > div:nth-child(1), .wrapper.card .row > div:nth-child(2){
+    border-right:0;
+  }
+
+  .row.wrapper-main-info > .col-md-12 > div{
+    margin-right: 0px;
+  }
+
+  app-dashboard{
+    width: 83%;
+  }
+
+  .dashboard-wrapper, .dashboard-wrapper > .centered-dash{
+    width: 100%;
+  }
+
+  app-statistics{
+    display: flex;
+    justify-content: center;
+  }
+
+}
+
+@media screen and (max-width: 782px) {
+
+
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 600px) {
+
+}
+
+@media screen and (max-width: 568px) {
+
+}
+

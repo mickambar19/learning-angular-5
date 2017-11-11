@@ -1,3 +1,128 @@
-<p>
-  header works!
-</p>
+
+  <div class="row wrapper">
+    <div class="col-md-6 same-height ">
+      <div class="brand-logo">
+        <img src="../../assets/brand-logo.png" alt="" class="brand">
+      </div>
+    </div>
+    <div class="col-md-4 col-md-offset-2 same-height row-eq-height" style="display: flex;align-content: center;align-items: center;justify-content: center;">
+      <div class="row" style="height: 100%;flex: 1;display: flex;justify-content: flex-end;align-items: center;">
+        <div id="dropdown-1" class="col-md-offset-0 col-sm-4 col-sm-offset-1 col-xs-5 dropdown-wrapper">
+          <div class="dropdown">
+            <button class="btn dropdown-toggle dropdown-button-selector" type="button" id="bankAccount" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              <div style="display: flex;">
+                <div class="data-dropdown-wrapper">
+                  <div class="dropdown-type">Cuenta Bancaria</div>
+                  <div class="selected-type">Etiqueta/HSBC</div>
+                </div>
+                <div class="center-with-flex caret-wrapper">
+                  <span class="caret"></span>
+                </div>
+              </div>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="bankAccount">
+              <li><a href="#">Separated link</a></li>
+            </ul><!-- dropdown-menu-->
+          </div>
+        </div><!-- dropdown-wrapper-->
+
+        <div id="dropdown-2" class="col-sm-4 col-xs-5 dropdown-wrapper">
+          <div class="dropdown">
+            <button class="btn dropdown-toggle dropdown-button-selector" type="button" id="bankAccount" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              <div style="display: flex;">
+                <div class="data-dropdown-wrapper">
+                  <div class="dropdown-type">Cuenta SAT</div>
+                  <div class="selected-type">RFC - 3456</div>
+                </div>
+                <div class="center-with-flex caret-wrapper">
+                  <span class="caret"></span>
+                </div>
+              </div>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="bankAccount">
+              <li><a href="#">Separated link</a></li>
+            </ul><!-- dropdown-menu-->
+          </div>
+        </div><!-- dropdown-wrapper-->
+
+        <div class="col-xs-2 pull-right notifications-wrapper"  style="justify-content: flex-end;flex: 1;">
+          <div class="center-with-flex pull-right" style="height: 100%;padding-right: 15px; position: relative">
+
+            <div style="position: relative;">
+              <span style="position: absolute;top: -5px;right: -15px;border: solid 2px white;color: white;border-radius: 40px;padding: 0px 7px;background-color: #FF455C;"> 30</span>
+              <img src="../../assets/bell.png" alt="" class="">
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="row divider"></div>
+  <div class="row wrapper">
+    <div class="col-md-3" style="display: flex;padding-right: 0;">
+      <span class="center-with-flex" style="width: 45px;">
+        <img src="../../assets/loupe.png" alt="" style="height: 20px;">
+      </span>
+
+      <input type="text" placeholder="Buscar sección, documento, nombre" class="searchbar" >
+      <div class="visible-sm visible-xs ">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+    </div>
+    <div class="col-md-6 visible-md visible-lg centered-menu">
+      <div class="collapse navbar-collapse" id="main-menu">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#"><span>Todo</span> <span class="sr-only">(current)</span></a></li>
+
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <span>Anual</span><span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">One more separated link</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span>Mensual</span> <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">One more separated link</a></li>
+            </ul>
+          </li>
+
+          <p class="navbar-text main-menu-option">Por periodo: </p>
+          <button class="btn btn-default navbar-btn main-menu-option">dd-mm-aa</button>
+          <button class="btn btn-default navbar-btn main-menu-option">dd-mm-aa</button>
+
+        </ul>
+
+      </div><!-- /.navbar-collapse -->
+    </div>
+    <div class="col-md-2 col-md-offset-1 visible-md visible-lg">
+      <div class="center-with-flex" style="width: 100%; height: 100%">
+        <button class="btn btn-default pull-right" style="background-color: #00B8A4; color: white;border: 0;">
+          <img src="../../assets/refresh-icon.png" /> Actualizar Cuentas
+        </button>
+      </div>
+
+    </div>
+  </div>
+  <div class="row divider"></div>
+
