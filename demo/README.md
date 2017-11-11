@@ -2,6 +2,14 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.0.
 
+This project contains the test of generating components via ng g c <name of component> of a simple webpage.
+ 
+You can easily run this demo by using the following commands
+
+`npm install`
+`ng serve --prod`
+and going to `localhost:4200` 
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
